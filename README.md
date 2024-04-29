@@ -5,4 +5,4 @@ i use: python with django, psql, gcp & do, bootstrap, and obviously git *(since 
 
 most of my projects are not public. sorry.
 
-but you can see my projects for yourself on [my website](https://bobbedbob.io/)
+[personal site](https://bobbedbob.io/)
