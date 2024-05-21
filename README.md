@@ -1,7 +1,9 @@
 # hi im bobby
 ## average programmer, student, and maths enjoyer
 
-i use: python with django, psql, gcp & do, bootstrap, and git.
+i use: python with django, bootstrap, postgresql, digitalocean & google cloud platform, and git.
+
+i also know some lua and c/c++.
 
 (full-stack development !!!)
 
