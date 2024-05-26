@@ -3,10 +3,10 @@
 
 my stack: *(in order of descending proficiency)*
 - Languages: Python, Lua/Luau, SQL and C/C++
-- Backend: Django, Flavours of Linux *(mainly fedora and ubuntu)*, PostgreSQL and SQLite
-- Frontend: HTML, Boostrap, Tailwind and raw CSS.
+- Backend: Django, Linux *(ubuntu/fedora)*, PostgreSQL and SQLite
+- Frontend: HTML, raw CSS, Boostrap, and Tailwind.
 - DevOps: GitHub, Git, Microsoft Azure, DigitalOcean and GCP
-- Tools: Jetbrains PyCharm, Roblox Studio, Google Fonts and VSC
+- Tools: VSC, Jetbrains PyCharm, and Roblox Studio.
 
 on a side note:
 - native Chinese speaker
