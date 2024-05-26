@@ -1,7 +1,7 @@
 # hi im bobby
 ## average programmer, student, and maths enjoyer
 
-i use: python with django, bootstrap, postgresql, microsoft azure, flavours of linux *(mainly fedora & ubuntu)*, and git.
+my stack: python with django, bootstrap, postgresql, microsoft azure, flavours of linux *(mainly fedora & ubuntu)*, and git.
 
 i also know some lua and c/c++.
 
