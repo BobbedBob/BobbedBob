@@ -20,8 +20,6 @@ on a side note:
 
 most of my projects' source code are not public *(for now)*. sorry.
 
-some stuff i made:
-
 web full-stack development:
 - [*(2024)* Classani - Classroom management tooling for the future](https://classani.org)
   - **Stack: HTML + Bootstrap + raw CSS, Python with Django, Ubuntu Server, PostgreSQL, GitHub + Git, Microsoft Azure & my usual tools**
