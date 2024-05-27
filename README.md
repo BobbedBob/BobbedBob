@@ -31,7 +31,7 @@ web full-stack development:
   - One-page introduction & stuff about me. 
   - Social links.
   - Hosted with [Nekoweb](https://nekoweb.org/)
-- *(2024, abandoned)* materifly.net - Shopping site for construction materials & etc.
+- *(2023, abandoned)* materifly.net - Shopping site for construction materials & etc.
   - **Stack: HTML + Tailwind + raw CSS, Python with Django, Ubuntu Server, PostgreSQL, GitHub + Git, GCP + DigitalOcean & my usual tools**
   - Second project with Django, suggested by my parents.
   - Very bad code *(better than the first one)*, and not a lot of good practices are implemented.
