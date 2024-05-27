@@ -1,5 +1,4 @@
 # hi im bobby
-## average programmer, student, and maths enjoyer
 
 my stack: *(in order of descending proficiency)*
 - Languages: Python, Lua/Luau, SQL and C/C++
