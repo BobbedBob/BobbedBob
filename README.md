@@ -30,7 +30,7 @@ web full-stack development:
   - **Stack: HTML + raw CSS & Google Fonts**
   - One-page introduction & stuff about me. 
   - Social links.
-  - Hosted with [Nekoweb](https://nekoweb.org/)
+  - Closed source.
 - *(2023, abandoned)* materifly.net - Shopping site for construction materials & etc.
   - **Stack: HTML + Tailwind + raw CSS, Python with Django, Ubuntu Server, PostgreSQL, GitHub + Git, GCP + DigitalOcean & my usual tools**
   - Second project with Django, suggested by my parents.
