@@ -26,7 +26,7 @@ web full-stack development:
   - Third project with Django, actual implementation of good practices.
   - Closed source.
 - [*(2024)* bobbedbob.io - my corner on the interwebs](https://bobbedbob.io/)
-  - **Stack: HTML + raw CSS & Google Fonts**
+  - **Stack: HTML + raw CSS  + private Git + Google Fonts & my usual tools**
   - One-page introduction & stuff about me. 
   - Social links.
   - Closed source.
