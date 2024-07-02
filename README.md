@@ -22,7 +22,7 @@ most of my projects' source code are not public *(for now)*. sorry.
 web full-stack development:
 - [*(2024)* Classani - Classroom management tooling for the future](https://classani.org)
   - **Stack: HTML + Bootstrap + raw CSS, Python with Django, Ubuntu Server, PostgreSQL, GitHub + Git, Microsoft Azure & my usual tools**
-  - Latest project, also a school project.
+  - Latest projec made for classroom management & stuff like that.
   - Third project with Django, actual implementation of good practices.
   - Closed source.
 - [*(2024)* bobbedbob.io - my corner on the interwebs](https://bobbedbob.io/)
