@@ -9,7 +9,7 @@ my stack: *(in order of descending proficiency)*
 
 on a side note:
 - native Chinese speaker
-- English at IELTS band 8
+- English at IELTS band 8 (L8.5/R9/S7/W7)
 - azure shrill 
 - part-time goober
 - full-stack dev
