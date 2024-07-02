@@ -1,7 +1,7 @@
 # hi im bobby
 
 my stack: *(in order of descending proficiency)*
-- Languages: Python, Lua/Luau, SQL and C/C++
+- Languages: Python, SQL, Lua/Luau, and C/C++
 - Backend: Django, Linux *(ubuntu/fedora)*, PostgreSQL and SQLite
 - Frontend: HTML, raw CSS, Bootstrap, and Tailwind.
 - DevOps: GitHub, Git, Microsoft Azure, DigitalOcean and GCP
