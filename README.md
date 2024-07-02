@@ -15,7 +15,7 @@ on a side note:
 - full-stack dev
 - programming since grade 4 *(forced by mum)*
 - extensive experience in research with polyhedrons *(rpg/board games player)*
-- owns bobspeak *(my own spin of English)*
+- maths enjoyer
 
 most of my projects' source code are not public *(for now)*. sorry.
 
