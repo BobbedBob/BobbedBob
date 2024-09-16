@@ -9,7 +9,7 @@ my stack: *(in order of descending proficiency)*
 
 on a side note:
 - native Chinese speaker
-- English at IELTS band 8 (L8.5/R9/S7/W7)
+- English at IELTS band 8 *(L8.5/R9/S7/W7)*
 - azure shrill 
 - part-time goober
 - full-stack dev
@@ -21,7 +21,7 @@ most of my projects' source code are not public *(for now)*. sorry.
 
 web full-stack development:
 - [*(2024)* Classani - Classroom management tooling for the future](https://classani.org)
-  - **Stack: HTML + Bootstrap + raw CSS, Python with Django, Ubuntu Server, PostgreSQL, GitHub + Git, Microsoft Azure & my usual tools**
+  - **Stack: HTML + Bootstrap + raw CSS, Python with Django, Ubuntu Server, PostgreSQL / SQLite, GitHub + Git, Microsoft Azure & my usual tools**
   - Latest projec made for classroom management & stuff like that.
   - Third project with Django, actual implementation of good practices.
   - Closed source.
