@@ -27,11 +27,11 @@ web full-stack development:
   - **Stack: HTML + raw CSS  + private Git + Google Fonts & my usual tools**
   - One-page introduction & stuff about me. 
 
-- *(2024, abandoned)* materifly.net - Shopping site for construction materials & etc.
+- *(2024, inactive)* materifly.net - Shopping site for construction materials & etc.
   - **Stack: HTML + Tailwind + raw CSS, Python with Django, Ubuntu Server, PostgreSQL, GitHub + Git, GCP + DigitalOcean & my usual tools**
   - Second project with Django, suggested by my parents.
 
-- *(2023, abandoned)* artimaths.net - Maths for Perfectionists.
+- *(2023, inactive)* artimaths.net - Maths for Perfectionists.
   - **Stack: HTML + raw CSS, Python with Django, Ubuntu Server, PostgreSQL, Github + Git, DigitalOcean & my usual tools**
 
 
