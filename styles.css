@@ -77,9 +77,10 @@ footer {
 }
 
 .tooltip .tooltiptext {
+    font-size: 0.75rem;
     visibility: hidden;
     width: 20rem;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.1);
     color: #fff;
     text-align: center;
     border-radius: 6px;
