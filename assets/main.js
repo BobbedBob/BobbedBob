@@ -81,6 +81,19 @@ if (visitsNum === 0) {
     musicElement.src = `assets/audio/mus_express_myself.ogg`
 }
 
+function playExplosionSound() {
+    let audio = new Audio("assets/audio/mus_explosion.mp3")
+    audio.volume = 0.5
+    audio.play().then(r => null)
+}
+
+function setOnClick(e) {
+    e.onclick = playExplosionSound
+}
+
+let aLinks = Array.from(document.getElementsByClassName("alink"))
+aLinks.forEach(setOnClick)
+
 function playAudio() {
     if (navigator.userActivation.hasBeenActive || navigator.userActivation.isActive) {
         const audioElement = document.getElementById("music-audio")
