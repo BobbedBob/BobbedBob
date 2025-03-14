@@ -18,24 +18,23 @@
     <meta property="og:image" content="https://bobbedbob.io/assets/img.png/"/>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <!--
-    This page is constructed in loving memory of my grandparents, Melody Z. and those who we love but are no longer here with us.
-    If you, or your loved ones may be in need of help, please reach out before it is too late. Please do not hesitate.
+    This website is built in loving memory of my grandparents, Melody, Ryuichi Sakamoto, and those who we love but are no longer here with us.
+    If you, or your loved ones may be in need of help, please reach out before it is too late. Please do not hesitate. Tragedy and joy may be just one phone call away.
     — Help and support in Australia:
-        * Dial Lifeline at 13 11 14 or visit their website at https://lifeline.org.au/
-        * Dial the SCS at 1300 659 467
-        * Dial BeyondBlue at 1300 224 636
+        * Dial Lifeline at 13 11 14 or visit their website at <a href="https://lifeline.org.au/" target="_blank" style="text-decoration: none; color: darkblue">https://lifeline.org.au/</a>.
+        * Dial the SCS at 1300 659 467.
+        * Dial BeyondBlue at 1300 224 636 or visit website <a href="https://www.beyondblue.org.au/" target="_blank" style="text-decoration: none; color: darkblue">https://beyondblue.org.au/</a>.
     — Find more help and support or for help and support anywhere else in the world:
-        * Visit https://www.helpguide.org/find-help
+        * Visit HelpGuide at <a href="https://www.helpguide.org/find-help" target="_blank" style="text-decoration: none; color: darkblue">https://helpguide.org/find-help/</a>.
 
-    If you or your loved ones are in immediate danger,
-    dial Triple Zero (000) or your local emergency number immediately.
+    If you or your loved ones are in danger, dial Triple Zero (000) or your local emergency number immediately.
 -->
 <body>
 <a rel="me" href="https://wetdry.world/@bobby"></a>
 <div style="text-align: center;">
-    <marquee direction="left" height="30px" scrollamount="15">
+    <marquee id="rolling-text" direction="left" height="30px" scrollamount="15"
+             style="background-color: whitesmoke; color: black;">
         I believe that human consciousness is a being separate from the body which it inhabits,
         and that this consciousness existed prior to embodiment, and will survive the disillusion of its physical form.
         I am convinced of this, not only by the authority of religion and philosophy, but also by a natural sense within
@@ -50,93 +49,233 @@
         Neither can I accept the doctrine of an eternal judgment with everlasting rewards and punishments
         meted out at the end of one frail and imperfect span of years in this world.
     </marquee>
-    <div class="about-me">
-        <div class="headlines">
-            <h1>hi, im bobby.</h1>
-            <i>also known as gnomedevs, bobbedbobby and bobbedbob</i>
+    <div id="about-me">
+        <div id="headlines">
+
+            <div class="tooltip">
+                <h1 style="margin-bottom: 0.2rem;" class="wobble">hi, im bobby.</h1>
+                <span class="tooltiptext">
+                    <small><i>also known as gnomedevs, bobbedbobby and bobbedbob</i></small>
+                </span>
+            </div>
             <h3>average programmer, student, and maths enjoyer</h3>
         </div>
-        <div class="links" style="margin-top: 2rem">
+        <div id="links" style="margin-top: 2rem">
             <a
                     class="alink"
                     href="https://discordapp.com/users/411004916430143508"
                     target="_blank"
             >
-                <img src="assets/discord.svg" alt="discord" width="25" height="25"/>
+                <div class="tooltip">
+                    <img src="assets/discord.svg" alt="discord" width="25" height="25"/>
+                    <span class="tooltiptext">
+                        discord
+                    </span>
+                </div>
             </a>
             <a
                     class="alink"
                     target="_blank"
                     href="https://github.com/BobbedBob"
             >
-                <img src="assets/github.svg" alt="github" width="25" height="25"/>
+                <div class="tooltip">
+                    <img src="assets/github.svg" alt="github" width="25" height="25"/>
+                    <span class="tooltiptext">
+                        github
+                    </span>
+                </div>
             </a>
             <a class="alink" target="_blank" href="https://wetdry.world/@bobby">
-                <img src="assets/mastodon.svg" alt="mastodon" width="25" height="25"/>
+                <div class="tooltip">
+                    <img src="assets/mastodon.svg" alt="mastodon" width="25" height="25"/>
+                    <span class="tooltiptext">
+                        mastodon
+                    </span>
+                </div>
             </a>
             <a class="alink" href="https://bsky.app/profile/bobbedbob.io">
-                <img src="assets/bsky.png" alt="bluesky" width="25" height="25"/>
+                <div class="tooltip">
+                    <img src="assets/bsky.png" alt="bluesky" width="25" height="25"/>
+                    <span class="tooltiptext">
+                        bluesky
+                    </span>
+                </div>
             </a>
             <a
                     class="alink"
                     target="_blank"
                     href="https://twitter.com/bobbedbobby"
             >
-                <img src="assets/twitter.svg" alt="twitter" width="25" height="25"/>
+                <div class="tooltip">
+                    <img src="assets/twitter.svg" alt="twitter" width="25" height="25"/>
+                    <span class="tooltiptext">
+                        twitter
+                    </span>
+                </div>
             </a>
             <a
                     class="alink"
                     target="_blank"
                     href="https://www.linkedin.com/in/bob-yang/"
             >
-                <img src="assets/linkedin.png" alt="linkedin" width="25" height="25"/>
+                <div class="tooltip">
+                    <img src="assets/linkedin.png" alt="linkedin" width="25" height="25"/>
+                    <span class="tooltiptext">
+                        linkedin
+                    </span>
+                </div>
             </a>
             <a class="alink" target="_blank" href="mailto://bob@bobbedbob.io">
-                <img src="assets/mail.svg" alt="email" width="25" height="25"/>
+                <div class="tooltip">
+                    <img src="assets/mail.svg" alt="email" width="25" height="25"/>
+                    <span class="tooltiptext">
+                        🧓
+                    </span>
+                </div>
             </a>
         </div>
     </div>
-    <div class="projects" style="margin-top: 2rem">
-        <h3>Projects</h3>
-        <a class="alink" href="https://classani.org/" target="_blank" style="margin-right: 0.5rem">
-            <img
-                    src="assets/classani.png"
-                    width="111"
-                    height="35"
-                    alt="Classani, my best and latest project yet"
-            />
-        </a>
-        <a class="alink" href="https://create.roblox.com/talent/creators/574283844/" target="_blank">
-            <img
-                    src="assets/roblox_dev.png"
-                    width="82"
-                    height="35"
-                    alt="See my projects on Roblox"
-            />
-        </a>
+    <div id="stuff" style="justify-self: center; justify-content: center; text-align: center;" class="flex-container">
+        <div id="projects" style="margin: 2rem">
+            <h3>my projects!!</h3>
+            <a class="alink" href="https://classani.org/" target="_blank" style="margin-right: 0.5rem">
+                <div class="tooltip">
+                    <img
+                            src="assets/classani.png"
+                            width="111"
+                            height="35"
+                            alt="Classani"
+                    />
+                    <span class="tooltiptext">
+                        classani
+                    </span>
+                </div>
+            </a>
+            <a class="alink" href="https://create.roblox.com/talent/creators/574283844/" target="_blank">
+                <div class="tooltip">
+                    <img
+                            src="assets/roblox_dev.png"
+                            width="82"
+                            height="35"
+                            alt="See my projects on Roblox"
+                    />
+                    <span class="tooltiptext">
+                        my projects on roblox
+                    </span>
+                </div>
+            </a>
+        </div>
+        <div id="friends" style="margin-top: 2rem;">
+            <h3>my friends!!</h3>
+            <a class="alink" href="https://penguindevs.me/" target="_blank" style="margin-right: 0.5rem;">
+                <div class="tooltip">
+                    <img
+                            style="border-radius: 10px; border: azure"
+                            src="https://cdn.discordapp.com/avatars/373379352764612617/a_e2f6f164fcf706d5b1716d5073b7bb7b.gif"
+                            width="35"
+                            height="35"
+                            alt="penguindevs"
+                    />
+                    <span class="tooltiptext">
+                        penguindevs
+                    </span>
+                </div>
+            </a>
+            <a class="alink" href="https://shiroko.me/" target="_blank" style="margin-right: 0.5rem;">
+                <div class="tooltip">
+                    <img
+                            style="border-radius: 10px; border: azure"
+                            src="https://cdn.discordapp.com/avatars/222069018507345921/46710b3dce24e05f9a493c6cba87622b.png?format=png&quality=lossless"
+                            width="35"
+                            height="35"
+                            alt="haruka"
+                    />
+                    <span class="tooltiptext">
+                        haruka
+                    </span>
+                </div>
+            </a>
+            <a class="alink" href="https://sexnine.xyz/" target="_blank" style="margin-right: 0.5rem;">
+                <div class="tooltip">
+                    <img
+                            style="border-radius: 10px; border: azure"
+                            src="https://sexnine.xyz/_app/immutable/assets/pfp.00c4202c.webp"
+                            width="35"
+                            height="35"
+                            alt="socksnine"
+                    />
+                    <span class="tooltiptext">
+                        socksnine
+                    </span>
+                </div>
+            </a>
+            <a class="alink" href="https://amia.dev/" target="_blank">
+                <div class="tooltip">
+                    <img
+                            style="border-radius: 10px; border: azure"
+                            src="https://cdn.discordapp.com/avatars/142007603549962240/0d5b7aa57b6961a75747fbc4c1e38b74.png?format=png&quality=lossless"
+                            width="35"
+                            height="35"
+                            alt="amia"
+                    />
+                    <span class="tooltiptext">
+                        amia
+                    </span>
+                </div>
+            </a>
+
+        </div>
     </div>
-    <footer style="margin-top: 6rem">
+    <footer id="footer" style="margin-top: 2.5rem">
         <p>
             Proudly supporting
         </p>
         <a
                 target="_blank"
                 style="text-decoration: none"
-                href="https://greens.org.au/"><img src="assets/greens.svg" width="62" height="62"/></a>
+                href="https://greens.org.au/">
+            <div class="tooltip">
+                <img src="assets/greens.svg" width="62" height="62"/>
+                <span class="tooltiptext">
+                        the australian greens, helping to push renewables, affordable housing and equality for all
+                    </span>
+            </div>
+        </a>
         <a
                 target="_blank"
                 style="text-decoration: none"
-                href="https://www.blackdoginstitute.org.au/"><img src="assets/bdi.jpg" width="140" height="62"/></a>
+                href="https://www.blackdoginstitute.org.au/">
+            <div class="tooltip">
+                <img src="assets/bdi.jpg" width="140" height="62"/>
+                <span class="tooltiptext">
+                        the black dog institute, helping with mental health, one person at a time
+                    </span>
+            </div>
+        </a>
         <a
                 target="_blank"
                 style="text-decoration: none"
-                href="https://pridefoundation.org.au/"><img src="assets/pfa.png" width="196" height="62"/></a>
+                href="https://pridefoundation.org.au/">
+            <div class="tooltip">
+                <img src="assets/pfa.png" width="196" height="62"/>
+                <span class="tooltiptext">
+                        pride foundation australia, helping to push the rights of LGBTQIA+ peoples
+                    </span>
+            </div>
+        </a>
 
+        <div id="webring" style="margin-top: 2rem;">
+            <a href="https://w.sexnine.xyz/4/p" class="alink"><</a><small> bobbedbob.io on <b>webring</b> </small><a
+                href="https://w.sexnine.xyz/4/n" class="alink">></a>
+        </div>
+        <audio id="music-audio" controls autoplay loop style="scale: 50%;" preload="auto">
+            <source id="music" src="assets/audio/mus_menu0.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
         <br/>
-        <br/>
-        <a href="https://w.sexnine.xyz/4/p" class="alink"><</a><small> bobbedbob.io on <b>webring</b> </small><a
-            href="https://w.sexnine.xyz/4/n" class="alink">></a>
+        <small id="visit-count"></small>
     </footer>
+    <script src="assets/main.js" type="text/javascript"></script>
 </div>
 </body>
 </html>
