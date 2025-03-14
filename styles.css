@@ -29,21 +29,6 @@ h3 {
     box-sizing: border-box;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 footer {
     font-size: medium;
 }
@@ -51,7 +36,6 @@ footer {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 .flex-container {
@@ -59,7 +43,6 @@ footer {
     flex-direction: row;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
     .flex-container {
         flex-direction: column;
