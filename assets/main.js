@@ -29,6 +29,7 @@ if (visits === null) {
 
 let visitsNum = parseInt(visits)
 if (isNaN(visitsNum)) {
+    console.log("could not parse visits count as integer!")
     visitsNum = 0
 }
 
@@ -38,7 +39,7 @@ const day = new Date(Date.now()).getDay()
 if (visitsNum > 10 && day === 4) {
     const rollingText = document.getElementById("rolling-text")
     rollingText.innerHTML = `
-            This website is built in loving memory of my grandparents, Melody, Ryuichi Sakamoto, and those who we love but are no longer here with us.
+            This website is built in loving memory of my grandparents, Melody, and those who we love but are no longer here with us.
             If you, or your loved ones may be in need of help, please reach out before it is too late. Please do not hesitate. Tragedy and joy may be just one phone call away.
             — Help and support in Australia:
                 * Dial Lifeline at 13 11 14 or visit their website at <a href="https://lifeline.org.au/" target="_blank" style="text-decoration: none; color: darkblue">https://lifeline.org.au/</a>.
