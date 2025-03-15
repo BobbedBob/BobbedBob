@@ -1,3 +1,5 @@
+// GET OUT!!!
+
 function setCookie(name, value, expiry) {
     const d = new Date();
     d.setTime(d.getTime() + (expiry * 24 * 60 * 60 * 1000));
@@ -19,6 +21,10 @@ function getCookie(query) {
         }
     }
     return null;
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
 
 let visits = getCookie("visits")
@@ -50,12 +56,12 @@ if (visitsNum > 10 && day === 4) {
         
             If you or your loved ones are in danger, dial Triple Zero (000) or your local emergency number immediately.
     `
-    musicElement.src = `assets/audio/mus_memory.ogg`
+    musicElement.src = `assets/audio/mus_memory.ogg?v=${getRandomInt(69420)}`
 } else {
     if (visitsNum <= 6) {
-        musicElement.src = `assets/audio/mus_menu${visits}.ogg`
+        musicElement.src = `assets/audio/mus_menu${visits}.ogg?v=${getRandomInt(69420)}`
     } else {
-        musicElement.src = `assets/audio/mus_menu6.ogg`
+        musicElement.src = `assets/audio/mus_menu6.ogg?v=${getRandomInt(69420)}`
     }
 }
 
@@ -77,9 +83,13 @@ if (visitsNum === 0) {
         visitCountElement.innerText = `I love you!! Now you have visited me ${visitsNum + 1} times!!!`
     }
 
+    if (getRandomInt(100) === 69) {
+        visitCountElement.innerText = `;)`
+    }
+
 } else {
     visitCountElement.innerText = `Now, you have visited me ${visitsNum + 1} times.`
-    musicElement.src = `assets/audio/mus_express_myself.ogg`
+    musicElement.src = `assets/audio/mus_express_myself.ogg?v=${getRandomInt(100)}`
 }
 
 function playExplosionSound() {
@@ -92,8 +102,12 @@ function setOnClick(e) {
     e.onclick = playExplosionSound
 }
 
-let aLinks = Array.from(document.getElementsByClassName("alink"))
+const aLinks = Array.from(document.getElementsByClassName("alink"))
 aLinks.forEach(setOnClick)
+
+const skills = Array.from(document.getElementsByClassName("skill"))
+skills.forEach(setOnClick)
+
 
 function playAudio() {
     if (navigator.userActivation.hasBeenActive || navigator.userActivation.isActive) {
