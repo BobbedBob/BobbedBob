@@ -41,12 +41,6 @@ if (isNaN(visitsNum)) {
 
 const musicElement = document.getElementById("music")
 
-if (visitsNum <= 6) {
-    musicElement.src = `assets/audio/mus_menu${visits}.ogg?v=${getRandomInt(69420)}`
-} else {
-    musicElement.src = `assets/audio/mus_menu6.ogg?v=${getRandomInt(69420)}`
-}
-
 const visitCountElement = document.getElementById("visit-count")
 if (visitsNum === 0) {
     visitCountElement.innerText = `Thanks for coming to my little corner on the interwebs!!`
@@ -84,10 +78,10 @@ aLinks.forEach(setOnClick)
 const skills = Array.from(document.getElementsByClassName("skill"))
 skills.forEach(setOnClick)
 
+const audioElement = document.getElementById("music-audio")
 
 function playAudio() {
     if (navigator.userActivation.hasBeenActive || navigator.userActivation.isActive) {
-        const audioElement = document.getElementById("music-audio")
         audioElement.play()
     } else {
         window.setTimeout(playAudio, 69)
@@ -96,8 +90,17 @@ function playAudio() {
 
 console.log(musicElement.src)
 
-document.addEventListener("DOMContentLoaded", (e) => {
-    if (musicElement.src) {
+document.addEventListener("DOMContentLoaded", async (e) => {
+    if (visitsNum <= 6) {
+        musicElement.src = `assets/audio/mus_menu${visits}.ogg?v=${getRandomInt(69420)}`
+    } else {
+        musicElement.src = `assets/audio/mus_menu6.ogg?v=${getRandomInt(69420)}`
+    }
+
+    await new Promise(r => setTimeout(r, 1000));
+    console.log(audioElement.readyState)
+    if (audioElement.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+        audioElement.style.display = ""
         playAudio()
         setCookie("visits", visitsNum + 1, 69)
     } else {
