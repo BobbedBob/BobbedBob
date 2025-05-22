@@ -3,7 +3,7 @@
 my stack: *(in order of descending proficiency)*
 - Languages: Python, SQL, Lua/Luau, and C/C++
 - Backend: Django, Linux *(ubuntu/fedora)*, SQLite and PostgreSQL
-- Frontend: HTML, raw CSS, Bootstrap, and Tailwind.
+- Frontend: HTML, raw CSS, Bootstrap, HTMX, and Tailwind.
 - DevOps: GitHub, Git, Microsoft Azure, Google Cloud Platform, and DigitalOcean
 - Tools: Jetbrains PyCharm, VSC, and Roblox Studio.
 
@@ -13,18 +13,17 @@ on a side note:
 - part-time goober
 - full-stack dev
 - programming since grade 4 *(forced by mum)*
-- extensive experience in research with polyhedrons *(rpg/board games player)*
 - maths enjoyer
 
 most of my projects' source code are not public *(for now)*. sorry.
 
 web full-stack development:
-- [*(2024)* Classani - Classroom management tooling for the future](https://classani.org)
-  - **Stack: HTML + Bootstrap + raw CSS, Python with Django, Ubuntu Server, PostgreSQL / SQLite, GitHub + Git, Google Cloud Platform & my usual tools**
+- [*(2024-2025)* Classani - Classroom management tooling for the future](https://classani.org)
+  - **Stack: HTML + Bootstrap, raw CSS + SCSS, standard JS + HTMX, Python with Django, Ubuntu Server, PostgreSQL / SQLite, GitHub & Actions CI, Google Cloud Platform & my usual tools**
   - Latest projec made for classroom management & stuff like that.
 
-- [*(2024)* bobbedbob.io - my corner on the interwebs](https://bobbedbob.io/)
-  - **Stack: HTML + raw CSS  + private Git + Google Fonts & my usual tools**
+- [*(2024-2025)* bobbedbob.io - my corner on the interwebs](https://bobbedbob.io/)
+  - **Stack: HTML + raw CSS + JS + private Git + Google Fonts & my usual tools**
   - One-page introduction & stuff about me. 
 
 - *(2024, inactive)* materifly.net - Shopping site for construction materials & etc.
