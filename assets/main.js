@@ -28,34 +28,45 @@ function getRandomInt(max) {
 }
 
 let visits = getCookie("visits")
+let rawVisits = getCookie("rawVisits")
 
 if (visits === null) {
     visits = "0"
 }
 
+if (rawVisits === null) {
+    rawVisits = "0"
+}
+
 let visitsNum = parseInt(visits)
 if (isNaN(visitsNum)) {
-    console.log("could not parse visits count as integer!")
+    console.warn("could not parse visits count as integer!")
     visitsNum = 0
+}
+
+let rawVisitsNum = parseInt(rawVisits)
+if (isNaN(rawVisitsNum)) {
+    console.warn("could not parse raw visits count as integer!")
+    rawVisitsNum = 0
 }
 
 const musicElement = document.getElementById("music")
 
 const visitCountElement = document.getElementById("visit-count")
-if (visitsNum === 0) {
+if (rawVisitsNum === 0) {
     visitCountElement.innerText = `Thanks for coming to my little corner on the interwebs!!`
 } else if (visitsNum <= 10) {
-    visitCountElement.innerText = `Hey, it's you again! Now you have visited me ${visitsNum + 1} times!!`
+    visitCountElement.innerText = `Hey, it's you again! Now you have visited me ${rawVisitsNum + 1} times!!`
 } else if (visitsNum < 20) {
-    visitCountElement.innerText = `Woah! A regular, now you have visited me ${visitsNum + 1} times!!`
+    visitCountElement.innerText = `Woah! A regular, now you have visited me ${rawVisitsNum + 1} times!!`
 } else if (visitsNum < 30) {
-    visitCountElement.innerText = `Oh my god, it's you! Now you have visited me ${visitsNum + 1} times!!`
+    visitCountElement.innerText = `Oh my god, it's you! Now you have visited me ${rawVisitsNum + 1} times!!`
 } else if (visitsNum < 40) {
-    visitCountElement.innerText = `How is it going, my friend? Now you have visited me ${visitsNum + 1} times!!`
+    visitCountElement.innerText = `How is it going, my friend? Now you have visited me ${rawVisitsNum + 1} times!!`
 } else if (visitsNum < 50) {
-    visitCountElement.innerText = `You like me, don't you? Now you have visited me ${visitsNum + 1} times!!`
+    visitCountElement.innerText = `You like me, don't you? Now you have visited me ${rawVisitsNum + 1} times!!`
 } else {
-    visitCountElement.innerText = `I love you!! Now you have visited me ${visitsNum + 1} times!!!`
+    visitCountElement.innerText = `I love you!! Now you have visited me ${rawVisitsNum + 1} times!!!`
 }
 
 if (getRandomInt(100) === 69) {
@@ -88,7 +99,7 @@ function playAudio() {
     }
 }
 
-console.log(musicElement.src)
+console.debug(musicElement.src)
 
 document.addEventListener("DOMContentLoaded", async (e) => {
     if (visitsNum <= 6) {
@@ -98,13 +109,12 @@ document.addEventListener("DOMContentLoaded", async (e) => {
     }
 
     await new Promise(r => setTimeout(r, 1000));
-    console.log(audioElement.readyState)
+    console.debug(audioElement.readyState)
     if (audioElement.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
         audioElement.style.display = ""
         playAudio()
         setCookie("visits", visitsNum + 1, 69)
-    } else {
-        const audioElement = document.getElementById("music-audio")
-        audioElement.remove()
     }
 });
+
+setCookie("rawVisits", rawVisitsNum + 1, 69)
