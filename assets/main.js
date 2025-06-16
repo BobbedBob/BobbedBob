@@ -93,6 +93,7 @@ const audioElement = document.getElementById("music-audio")
 
 function playAudio() {
     if (navigator.userActivation.hasBeenActive || navigator.userActivation.isActive) {
+        audioElement.volume = 0.2
         audioElement.play()
     } else {
         window.setTimeout(playAudio, 69)
