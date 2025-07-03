@@ -4,7 +4,7 @@ my stack: *(in order of descending proficiency)*
 - Languages: Python, SQL, Lua/Luau, and C/C++
 - Backend: Django, Linux *(ubuntu/fedora)*, SQLite and PostgreSQL
 - Frontend: HTML, raw CSS, Bootstrap, HTMX, and Tailwind.
-- DevOps: GitHub, Git, Microsoft Azure, Google Cloud Platform, and DigitalOcean
+- DevOps: GitHub, Google Cloud Platform, Git and Microsoft Azure.
 - Tools: Jetbrains PyCharm, VSC, and Roblox Studio.
 
 on a side note:
