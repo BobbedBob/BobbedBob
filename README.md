@@ -4,7 +4,7 @@ my stack: *(in order of descending proficiency)*
 - Languages: Python, SQL, Lua/Luau, and C/C++
 - Backend: Django, Linux *(ubuntu/fedora)*, SQLite and PostgreSQL
 - Frontend: HTML, raw CSS, Bootstrap, HTMX, and Tailwind.
-- DevOps: GitHub, Git, Microsoft Azure, Google Cloud Platform, and DigitalOcean
+- DevOps: GitHub, Google Cloud Platform, Git and Microsoft Azure.
 - Tools: Jetbrains PyCharm, VSC, and Roblox Studio.
 
 on a side note:
@@ -36,3 +36,6 @@ web full-stack development:
 
 roblox stuff:
 - [Learn more on my Roblox Creator Page](https://create.roblox.com/talent/creators/574283844)
+
+
+<table><tbody><tr><td><a href="https://octo-ring.com/"><img src="https://octo-ring.com/static/img/widget/top.png" width="99%" alt="Octo Ring logo" align="top"></a><br><a href="https://octo-ring.com/p/BobbedBob/prev"><img src="https://octo-ring.com/static/img/widget/prev.png" width="33%" alt="previous" align="top" title="previous profile"></a><a href="https://octo-ring.com/p/BobbedBob/random"><img src="https://octo-ring.com/static/img/widget/random.png" width="33%" alt="random" align="top" title="random profile"></a><a href="https://octo-ring.com/p/BobbedBob/next"><img src="https://octo-ring.com/static/img/widget/next.png" width="33%" alt="next" align="top" title="next profile"></a><br><a href="https://octo-ring.com/"><img src="https://octo-ring.com/static/img/widget/bottom.png" width="99%" alt="check out other GitHub profiles in the Octo Ring" align="top"></a></td></tr></tbody></table>
