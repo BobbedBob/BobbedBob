@@ -33,6 +33,7 @@ footer {
 .tooltip {
     position: relative;
     display: inline-block;
+    width: max-content;
 }
 
 .flex-container {
@@ -46,11 +47,13 @@ footer {
     }
 
     #projects {
-        margin-bottom: 0; !important;
+        margin-bottom: 0;
+    !important;
     }
 
     #friends {
-        margin-top: 0; !important;
+        margin-top: 0;
+    !important;
     }
 }
 
@@ -107,7 +110,7 @@ a:hover {
 }
 
 .rainbow-text-animated {
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -116,11 +119,23 @@ a:hover {
 }
 
 @keyframes rainbow-animation {
-    0%,100% {
+    0%, 100% {
         background-position: 0 0;
     }
 
     50% {
         background-position: 100% 0;
     }
+}
+
+.skill:hover {
+  animation: tilt-shaking 0.15s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
