@@ -18,11 +18,11 @@ on a side note:
 most of my projects' source code are not public *(for now)*. sorry.
 
 web full-stack development:
-- [*(2024-2025)* Classani - Classroom management tooling for the future](https://classani.org)
+- [*(2024-2026)* Classani - Classroom management tooling for the future](https://classani.org)
   - **Stack: HTML + Bootstrap, raw CSS + SCSS, standard JS + HTMX, Python with Django, Ubuntu Server, PostgreSQL / SQLite, GitHub & Actions CI, Google Cloud Platform & my usual tools**
   - Latest projec made for classroom management & stuff like that.
 
-- [*(2024-2025)* bobbedbob.io - my corner on the interwebs](https://bobbedbob.io/)
+- [*(2024-2026)* bobbedbob.io - my corner on the interwebs](https://bobbedbob.io/)
   - **Stack: HTML + raw CSS + JS + private Git + Google Fonts & my usual tools**
   - One-page introduction & stuff about me. 
 
