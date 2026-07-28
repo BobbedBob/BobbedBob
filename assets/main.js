@@ -50,8 +50,6 @@ if (isNaN(rawVisitsNum)) {
     rawVisitsNum = 0
 }
 
-const musicElement = document.getElementById("music")
-
 const visitCountElement = document.getElementById("visit-count")
 if (rawVisitsNum === 0) {
     visitCountElement.innerText = `Thanks for coming to my little corner on the interwebs!!`
@@ -100,22 +98,21 @@ function playAudio() {
     }
 }
 
-console.debug(musicElement.src)
+console.debug(audioElement.src)
 
-document.addEventListener("DOMContentLoaded", async (e) => {
+document.addEventListener("DOMContentLoaded", (e) => {
     if (visitsNum <= 6) {
-        musicElement.src = `assets/audio/mus_menu${visits}.ogg?v=${getRandomInt(69420)}`
+        audioElement.src = `assets/audio/mus_menu${visits}.ogg?v=${getRandomInt(69420)}`
     } else {
-        musicElement.src = `assets/audio/mus_menu6.ogg?v=${getRandomInt(69420)}`
+        audioElement.src = `assets/audio/mus_menu6.ogg?v=${getRandomInt(69420)}`
     }
 
-    await new Promise(r => setTimeout(r, 1000));
-    console.debug(audioElement.readyState)
-    if (audioElement.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+    audioElement.addEventListener("canplay", () => {
+        console.debug(audioElement.readyState)
         audioElement.style.display = ""
         playAudio()
         setCookie("visits", visitsNum + 1, 69)
-    }
+    }, { once: true });
 });
 
 setCookie("rawVisits", rawVisitsNum + 1, 69)
