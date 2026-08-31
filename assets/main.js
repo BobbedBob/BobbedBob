@@ -73,7 +73,7 @@ if (getRandomInt(100) === 69) {
 
 function playExplosionSound() {
     let audio = new Audio("assets/audio/mus_explosion.mp3")
-    audio.volume = 0.5
+    audio.volume = 0.1
     audio.play().then(r => null)
 }
 
@@ -91,7 +91,7 @@ const audioElement = document.getElementById("music-audio")
 
 function playAudio() {
     if (navigator.userActivation.hasBeenActive || navigator.userActivation.isActive) {
-        audioElement.volume = 0.2
+        audioElement.volume = 0.15
         audioElement.play()
     } else {
         window.setTimeout(playAudio, 69)
