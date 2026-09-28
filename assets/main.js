@@ -107,12 +107,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
         audioElement.src = `assets/audio/mus_menu6.ogg?v=${getRandomInt(69420)}`
     }
 
-    audioElement.addEventListener("canplay", () => {
-        console.debug(audioElement.readyState)
-        audioElement.style.display = ""
-        playAudio()
-        setCookie("visits", visitsNum + 1, 69)
-    }, { once: true });
+    // audioElement.addEventListener("canplay", () => {
+    //     console.debug(audioElement.readyState)
+    //     audioElement.style.display = ""
+    //     playAudio()
+    //     setCookie("visits", visitsNum + 1, 69)
+    // }, { once: true });
 });
 
 setCookie("rawVisits", rawVisitsNum + 1, 69)
