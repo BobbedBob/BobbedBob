@@ -89,15 +89,6 @@ skills.forEach(setOnClick)
 
 const audioElement = document.getElementById("music-audio")
 
-function playAudio() {
-    if (navigator.userActivation.hasBeenActive || navigator.userActivation.isActive) {
-        audioElement.volume = 0.15
-        audioElement.play()
-    } else {
-        window.setTimeout(playAudio, 69)
-    }
-}
-
 console.debug(audioElement.src)
 
 document.addEventListener("DOMContentLoaded", (e) => {
@@ -110,9 +101,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
     audioElement.addEventListener("canplay", () => {
         console.debug(audioElement.readyState)
         audioElement.style.display = ""
-        // playAudio()
+        audioElement.volume = 0.15;
         setCookie("visits", visitsNum + 1, 69)
-    }, { once: true });
+    }, {once: true});
 });
 
 setCookie("rawVisits", rawVisitsNum + 1, 69)
