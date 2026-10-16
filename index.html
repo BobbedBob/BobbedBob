@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no"/>
-    <link rel="icon" type="image/x-icon" href="assets/img.png"/>
-    <title>bobby's site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" href="assets/img.png"/>
+    <link rel="apple-touch-icon" href="assets/img.png"/>
+    <title>bobby (BobbedBob) — full-stack developer, student & STEM fan</title>
+    <meta name="description"
+          content="Hi, I'm Bobby (aka BobbedBob / gnomedevs), a full-stack developer and student. I build web apps with Python, Django and HTMX."/>
+    <meta name="author" content="bobby (BobbedBob)"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="theme-color" content="#000000"/>
+    <link rel="canonical" href="https://bobbedbob.io/"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
@@ -13,10 +20,50 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
-    <meta property="og:title" content="bobby's site"/>
-    <meta property="og:description" content="average programmer, student, and STEM fan"/>
+    <meta property="og:type" content="profile"/>
+    <meta property="og:site_name" content="bobbedbob.io"/>
+    <meta property="og:title" content="bobby (BobbedBob) — full-stack developer"/>
+    <meta property="og:description" content="average programmer, student, and STEM fan. building web apps with Django & HTMX."/>
     <meta property="og:url" content="https://bobbedbob.io/"/>
-    <meta property="og:image" content="https://bobbedbob.io/assets/img.png/"/>
+    <meta property="og:image" content="https://bobbedbob.io/assets/img.png"/>
+    <meta property="og:image:width" content="128"/>
+    <meta property="og:image:height" content="128"/>
+    <meta property="og:image:alt" content="bobby's avatar"/>
+    <meta property="og:locale" content="en_AU"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@bobbedbobby"/>
+    <meta name="twitter:creator" content="@bobbedbobby"/>
+    <meta name="twitter:title" content="bobby (BobbedBob) — full-stack developer"/>
+    <meta name="twitter:description" content="average programmer, student, and STEM fan."/>
+    <meta name="twitter:image" content="https://bobbedbob.io/assets/img.png"/>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "url": "https://bobbedbob.io/",
+            "mainEntity": {
+                "@type": "Person",
+                "name": "bobby",
+                "alternateName": ["BobbedBob", "bobbedbobby", "gnomedevs"],
+                "url": "https://bobbedbob.io/",
+                "image": "https://bobbedbob.io/assets/img.png",
+                "email": "mailto:bob@bobbedbob.io",
+                "jobTitle": "Full-stack developer",
+                "description": "average programmer, student, and STEM fan",
+                "knowsAbout": ["Python", "Django", "HTMX", "JavaScript", "TypeScript", "Lua", "C++", "PostgreSQL", "SQLite", "Linux", "Google Cloud", "Roblox"],
+                "knowsLanguage": ["en", "zh"],
+                "sameAs": [
+                    "https://github.com/BobbedBob",
+                    "https://wetdry.world/@bobby",
+                    "https://bsky.app/profile/bobbedbob.io",
+                    "https://twitter.com/bobbedbobby",
+                    "https://www.linkedin.com/in/bob-yang/",
+                    "https://blog.bobbedbob.io/",
+                    "https://create.roblox.com/talent/creators/574283844"
+                ]
+            }
+        }
+    </script>
     <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <!--
@@ -76,6 +123,7 @@
             <a
                     class="alink"
                     target="_blank"
+                    rel="me noopener"
                     href="https://github.com/BobbedBob"
             >
                 <div class="tooltip">
@@ -85,7 +133,7 @@
                     </span>
                 </div>
             </a>
-            <a class="alink" target="_blank" href="https://wetdry.world/@bobby">
+            <a class="alink" target="_blank" rel="me noopener" href="https://wetdry.world/@bobby">
                 <div class="tooltip">
                     <img src="assets/socials/mastodon.svg" alt="mastodon" width="35" height="35"/>
                     <span class="tooltiptext">
@@ -93,7 +141,7 @@
                     </span>
                 </div>
             </a>
-            <a class="alink" href="https://bsky.app/profile/bobbedbob.io" target="_blank">
+            <a class="alink" rel="me noopener" href="https://bsky.app/profile/bobbedbob.io" target="_blank">
                 <div class="tooltip">
                     <img src="assets/socials/bsky.png" alt="bluesky" width="35" height="35"/>
                     <span class="tooltiptext">
@@ -104,6 +152,7 @@
             <a
                     class="alink"
                     target="_blank"
+                    rel="me noopener"
                     href="https://twitter.com/bobbedbobby"
             >
                 <div class="tooltip">
@@ -116,6 +165,7 @@
             <a
                     class="alink"
                     target="_blank"
+                    rel="me noopener"
                     href="https://www.linkedin.com/in/bob-yang/"
             >
                 <div class="tooltip">
@@ -125,7 +175,7 @@
                     </span>
                 </div>
             </a>
-            <a class="alink" target="_blank" href="mailto:bob@bobbedbob.io">
+            <a class="alink" target="_blank" rel="me" href="mailto:bob@bobbedbob.io">
                 <div class="tooltip">
                     <img src="assets/socials/mail.svg" alt="email" width="35" height="35"/>
                     <span class="tooltiptext">
@@ -139,7 +189,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="assets/skills/django.png"/>
+                 src="assets/skills/django.png" alt="django logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 django
             </span>
@@ -147,7 +197,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="bootstrap logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 bootstrap
             </span>
@@ -155,7 +205,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="assets/skills/htmx.svg"/>
+                 src="assets/skills/htmx.svg" alt="htmx logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 htmx
             </span>
@@ -163,7 +213,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="vitejs logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 vitejs
             </span>
@@ -171,7 +221,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 python
             </span>
@@ -179,7 +229,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="assets/skills/lua.png"/>
+                 src="assets/skills/lua.png" alt="lua logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 lua
             </span>
@@ -187,7 +237,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 javascript
             </span>
@@ -195,7 +245,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="typescript logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 typescript
             </span>
@@ -203,7 +253,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="cpp logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 cpp
             </span>
@@ -211,7 +261,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="google cloud logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 google cloud
             </span>
@@ -219,7 +269,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="linux logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 linux
             </span>
@@ -227,7 +277,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="sqlite logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 sqlite
             </span>
@@ -235,7 +285,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="mongodb logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 mongodb
             </span>
@@ -243,7 +293,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="postgresql logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 postgresql
             </span>
@@ -251,7 +301,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" alt="jetbrains pycharm logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 jetbrains pycharm
             </span>
@@ -259,7 +309,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="visual studio code logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 visual studio code
             </span>
@@ -267,7 +317,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg"/>
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" alt="cloudflare logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 cloudflare
             </span>
@@ -275,7 +325,7 @@
         <div class="tooltip">
             <img height="30" width="30"
                  class="skill"
-                 src="assets/socials/github.svg"/>
+                 src="assets/socials/github.svg" alt="github logo"/>
             <span style="font-size: 0.75rem;" class="tooltiptext">
                 github
             </span>
@@ -332,6 +382,7 @@
                     <div class="tooltip">
                         <img
                                 style="border-radius: 10px; border: azure"
+                                loading="lazy"
                                 src="assets/profiles/sam.png"
                                 width="35"
                                 height="35"
@@ -346,6 +397,7 @@
                     <div class="tooltip">
                         <img
                                 style="border-radius: 10px; border: azure"
+                                loading="lazy"
                                 src="https://sexnine.xyz/_app/immutable/assets/pfp.00c4202c.webp"
                                 width="35"
                                 height="35"
@@ -360,6 +412,7 @@
                     <div class="tooltip">
                         <img
                                 style="border-radius: 10px; border: azure"
+                                loading="lazy"
                                 src="assets/profiles/mct32.png"
                                 width="35"
                                 height="35"
@@ -374,6 +427,7 @@
                     <div class="tooltip">
                         <img
                                 style="border-radius: 10px; border: azure"
+                                loading="lazy"
                                 src="assets/profiles/penguindevs.gif"
                                 width="35"
                                 height="35"
@@ -388,6 +442,7 @@
                     <div class="tooltip">
                         <img
                                 style="border-radius: 10px; border: azure"
+                                loading="lazy"
                                 src="assets/profiles/halocelsius.png"
                                 width="35"
                                 height="35"
@@ -402,6 +457,7 @@
                     <div class="tooltip">
                         <img
                                 style="border-radius: 10px; border: azure"
+                                loading="lazy"
                                 src="assets/profiles/tans.png"
                                 width="35"
                                 height="35"
@@ -416,6 +472,7 @@
                     <div class="tooltip">
                         <img
                                 style="border-radius: 10px; border: azure"
+                                loading="lazy"
                                 src="assets/profiles/faye.png"
                                 width="35"
                                 height="35"
@@ -443,7 +500,7 @@
            style="text-decoration: none"
            href="https://www.unicef.org/">
             <div class="tooltip">
-                <img src="assets/socials/unicef.png" width="105" height="62"/>
+                <img src="assets/socials/unicef.png" alt="UNICEF logo" loading="lazy" width="105" height="62"/>
                 <span class="tooltiptext">
                     unicef, proudly donating for every child
                 </span>
@@ -454,7 +511,7 @@
            style="text-decoration: none"
            href="http://www.ruok.org.au/">
             <div class="tooltip">
-                <img src="assets/socials/ruok.png" width="100" height="62"/>
+                <img src="assets/socials/ruok.png" alt="R U OK? logo" loading="lazy" width="100" height="62"/>
                 <span class="tooltiptext">
                         RUOK, helping to create life-changing conversations everywhere
                     </span>
@@ -465,7 +522,7 @@
            style="text-decoration: none"
            href="https://pridefoundation.org.au/">
             <div class="tooltip">
-                <img src="assets/socials/pfa.png" width="196" height="62"/>
+                <img src="assets/socials/pfa.png" alt="Pride Foundation Australia logo" loading="lazy" width="196" height="62"/>
                 <span class="tooltiptext">
                         pride foundation australia, helping to push the rights of LGBTQIA+ peoples
                     </span>
