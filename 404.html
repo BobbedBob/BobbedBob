@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/img.png">
+    <link rel="icon" type="image/png" href="/assets/img.png">
     <title>404 - Not Found</title>
     <meta name="robots" content="noindex"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css?v=8">
 </head>
 <body>
 <div style="text-align: center;">
@@ -23,11 +23,33 @@
         encountered on the World Wide Web.
     </marquee>
     <div style="margin-top: 2rem">
-        <h1>
-            404
-        </h1>
+        <h1 class="wobble">404</h1>
         <h3>Not Found</h3>
     </div>
+    <div class="term-404">
+        <p><span class="p">guest@bobbedbob.io:~$</span> cd <span id="missing-path">/that-page</span></p>
+        <p>bash: cd: <span id="missing-path-2">/that-page</span>: No such file or directory</p>
+        <p><span class="p">guest@bobbedbob.io:~$</span> echo "where to now?"</p>
+        <p>where to now?</p>
+        <p><span class="p">guest@bobbedbob.io:~$</span> <a href="/">cd ~</a>   <span class="p"># take me home</span></p>
+        <p><span class="p">guest@bobbedbob.io:~$</span> <span class="blink">_</span></p>
+    </div>
 </div>
+<script>
+    // textContent, so a weird url can't inject anything
+    let path = window.location.pathname;
+    try { path = decodeURI(path); } catch { /* malformed %-encoding: show it raw */ }
+    document.getElementById("missing-path").textContent = path;
+    document.getElementById("missing-path-2").textContent = path;
+
+    // same prompt name the terminal on the main page uses (set with `name`)
+    try {
+        const name = (localStorage.getItem("bob.name") || "").trim();
+        const slug = name.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9_-]/g, "").slice(0, 16);
+        if (slug) document.querySelectorAll(".term-404 .p").forEach((p) => {
+            p.textContent = p.textContent.replace(/^guest@/, slug + "@");
+        });
+    } catch { /* no storage, stay guest */ }
+</script>
 </body>
 </html>
