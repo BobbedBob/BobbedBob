@@ -25,7 +25,6 @@ h3 {
     color: whitesmoke;
 }
 
-
 footer {
     font-size: medium;
 }
@@ -91,7 +90,6 @@ a:hover {
     cursor: pointer;
 }
 
-/* only the words "my blog" are clickable, not the whole row */
 #blog a {
     display: inline-block;
 }
@@ -126,8 +124,6 @@ a:hover {
   75% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
 }
-
-/* ---------- terminal hint + xp line ---------- */
 
 .term-hint,
 .xp-bar {
@@ -199,8 +195,6 @@ kbd {
         opacity: 0;
     }
 }
-
-/* ---------- terminal ---------- */
 
 .term {
     position: fixed;
@@ -328,7 +322,6 @@ kbd {
     color: #8a8a8a;
 }
 
-/* fastfetch output */
 .ff-logo {
     color: #51a2da;
 }
@@ -408,8 +401,6 @@ body.term-open {
     padding-bottom: var(--term-h, min(55vh, 440px));
 }
 
-/* ---------- docked strip + floating button ---------- */
-
 .term-strip {
     position: fixed;
     left: 0;
@@ -488,11 +479,8 @@ body.term-open .term-fab {
     display: none;
 }
 
-
-/* ---------- layout: sticky intro on the left, everything else on the right ---------- */
-
 #page {
-    overflow-x: clip; /* not hidden: hidden would break the sticky left column */
+    overflow-x: clip;
 }
 
 .layout {
@@ -558,7 +546,6 @@ body.term-open .term-fab {
     color: #8a8a8a;
 }
 
-/* skills live in the left column now */
 .side #skills {
     margin-top: 28px;
 }
@@ -590,8 +577,6 @@ body.term-open .term-fab {
     width: 26px;
     height: 26px;
 }
-
-/* ---------- project cards ---------- */
 
 .cards {
     display: grid;
@@ -676,8 +661,6 @@ body.term-open .term-fab {
     color: #666;
 }
 
-/* ---------- skills ---------- */
-
 .skill-row {
     display: flex;
     align-items: center;
@@ -706,8 +689,6 @@ body.term-open .term-fab {
 .skill-icons .tooltip img {
     display: block;
 }
-
-/* ---------- friends ---------- */
 
 .friend-list {
     display: flex;
@@ -740,8 +721,6 @@ body.term-open .term-fab {
 .friend:focus-visible span {
     text-decoration: underline dotted;
 }
-
-/* ---------- blog ---------- */
 
 #blog-marquee {
     display: block;
@@ -833,8 +812,6 @@ body.term-open .term-fab {
     font-weight: 700;
 }
 
-/* ---------- footer ---------- */
-
 #footer {
     display: flex;
     flex-direction: column;
@@ -888,14 +865,11 @@ body.term-open .term-fab {
     height: 36px;
 }
 
-/* short screens: let the left column scroll normally so its bottom never gets cut off */
 @media (max-height: 700px) {
     .side {
         position: static;
     }
 }
-
-/* ---------- phones and narrow windows: one column ---------- */
 
 @media (max-width: 900px) {
     .layout {
@@ -958,8 +932,6 @@ body.term-open .term-fab {
     }
 }
 
-/* ---------- toasts ---------- */
-
 .toasts {
     position: fixed;
     top: 92px;
@@ -1010,8 +982,6 @@ body.term-open .term-fab {
     }
 }
 
-/* ---------- click explosions ---------- */
-
 .boom,
 .boom-bit {
     position: fixed;
@@ -1050,8 +1020,6 @@ body.term-open .term-fab {
         opacity: 0;
     }
 }
-
-/* ---------- chaos mode + sudo rm -rf / ---------- */
 
 body.chaos #page h1,
 body.chaos #page h2,
@@ -1097,8 +1065,6 @@ body.shake #page {
     }
 }
 
-/* ---------- startup screen ---------- */
-
 .booting,
 .booting body {
     overflow: hidden;
@@ -1135,8 +1101,6 @@ body.shake #page {
     opacity: 0;
     pointer-events: none;
 }
-
-/* ---------- 404 ---------- */
 
 .term-404 {
     display: inline-block;

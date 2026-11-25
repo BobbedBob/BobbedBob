@@ -1,3 +1,4 @@
+// Visitor xp and levels
 (() => {
     "use strict";
     const bob = (window.bob = window.bob || {});
@@ -15,7 +16,7 @@
             try {
                 localStorage.setItem(key, String(value));
             } catch {
-                // private mode or storage disabled
+                // storage is off
             }
         },
     };
@@ -54,7 +55,6 @@
 
     let xp = parseInt(store.get("bob.xp"), 10);
     if (isNaN(xp)) {
-        // returning visitors from before xp existed get credit for their visits
         const prior = typeof rawVisitsNum === "number" ? rawVisitsNum : 0;
         xp = prior * 20;
         store.set("bob.xp", xp);
@@ -67,7 +67,6 @@
         onceDone = new Set();
     }
 
-    // ---------- toasts ----------
     let toastBox = null;
 
     function toast(text, big = false) {
@@ -105,7 +104,6 @@
     }
     bob.toast = toast;
 
-    // ---------- api ----------
     function status() {
         const level = levelFor(xp);
         const floor = threshold(level);
@@ -136,7 +134,6 @@
         if (after > before) toast(`level up! you're now lvl ${after} ("${titleFor(after)}")`, true);
     }
 
-    // xp that can only be earned once per visitor (first time running a command, etc.)
     function once(id, amount, reason) {
         if (onceDone.has(id)) return false;
         onceDone.add(id);

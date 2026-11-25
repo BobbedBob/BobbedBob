@@ -1,10 +1,9 @@
-// click explosions + konami chaos mode
+// Chaos mode and page effects
 (() => {
     "use strict";
     const bob = (window.bob = window.bob || {});
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    // ---------- chaos mode ----------
     const CODE = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
     let progress = 0;
 
@@ -23,11 +22,13 @@
             if (menuWasPlaying) menu.pause();
             dogsong.currentTime = 0;
             dogsong.play().catch(() => {
-                // blocked by browser
+                // blocked by the browser
             });
         } else {
             if (dogsong) dogsong.pause();
-            if (menuWasPlaying && menu) menu.play().catch(() => {});
+            if (menuWasPlaying && menu) menu.play().catch(() => {
+                // blocked by the browser
+            });
             menuWasPlaying = false;
         }
     }
@@ -62,7 +63,6 @@
         }
     });
 
-    // tooltips
     function keepInView(tip) {
         tip.style.removeProperty("--nudge");
         const r = tip.getBoundingClientRect();
@@ -79,7 +79,6 @@
         if (tip) keepInView(tip);
     });
 
-    // smaller projects button
     const moreButton = document.getElementById("more-projects");
     if (moreButton) {
         moreButton.addEventListener("click", () => {
@@ -91,10 +90,9 @@
         });
     }
 
-    // ---------- click explosions ----------
     const WORDS = ["*boom*", "*kaboom*", "*bang*", "*pow*", "*blam*"];
     const BITS = ["*", "+", ".", "x", "'", "`"];
-    const COLOURS = ["#6666ff", "#0099ff", "#00ff00", "#ff3399"]; // same as the rainbow blog link
+    const COLOURS = ["#6666ff", "#0099ff", "#00ff00", "#ff3399"];
     const pick = (list) => list[Math.floor(Math.random() * list.length)];
 
     function spawn(cls, text, x, y, colour) {
@@ -125,7 +123,7 @@
 
     document.addEventListener("click", (e) => {
         if (reducedMotion) return;
-        if (e.detail === 0) return; // keyboard "clicks" (enter on a link) have no position
+        if (e.detail === 0) return;
         if (e.target.closest("#term, #boot, audio")) return;
         boom(e.clientX, e.clientY);
     });

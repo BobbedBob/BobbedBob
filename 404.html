@@ -36,20 +36,19 @@
     </div>
 </div>
 <script>
-    // textContent, so a weird url can't inject anything
+
     let path = window.location.pathname;
-    try { path = decodeURI(path); } catch { /* malformed %-encoding: show it raw */ }
+    try { path = decodeURI(path); } catch { /* malformed address */ }
     document.getElementById("missing-path").textContent = path;
     document.getElementById("missing-path-2").textContent = path;
 
-    // same prompt name the terminal on the main page uses (set with `name`)
     try {
         const name = (localStorage.getItem("bob.name") || "").trim();
         const slug = name.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9_-]/g, "").slice(0, 16);
         if (slug) document.querySelectorAll(".term-404 .p").forEach((p) => {
             p.textContent = p.textContent.replace(/^guest@/, slug + "@");
         });
-    } catch { /* no storage, stay guest */ }
+    } catch { /* no storage */ }
 </script>
 </body>
 </html>

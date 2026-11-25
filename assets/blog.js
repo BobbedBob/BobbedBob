@@ -1,3 +1,4 @@
+// Latest blog posts from the feed
 (() => {
     "use strict";
     const bob = (window.bob = window.bob || {});
@@ -52,7 +53,6 @@
         },
     ];
 
-    // ---------- helpers ----------
     function el(tag, cls, text) {
         const node = document.createElement(tag);
         if (cls) node.className = cls;
@@ -87,7 +87,6 @@
         return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,.;:]$/, "") + "...";
     }
 
-    // ---------- rendering ----------
     function renderMarquee(posts) {
         const marquee = document.getElementById("blog-marquee");
         if (!marquee) return;
@@ -143,14 +142,13 @@
         renderCards(posts);
     }
 
-    // ---------- live feed ----------
     function parseFeed(xmlText) {
         const doc = new DOMParser().parseFromString(xmlText, "application/xml");
         if (doc.querySelector("parsererror")) throw new Error("feed didn't parse");
         const posts = [...doc.querySelectorAll("entry")].map((entry) => {
             const link = entry.querySelector("link[rel='alternate'], link");
             const summaryHtml = (entry.querySelector("summary") || entry.querySelector("content") || {}).textContent || "";
-            // the summary is html in a string: parse it inertly and keep only the text
+
             const summary = new DOMParser().parseFromString(summaryHtml, "text/html").body.textContent.replace(/\s+/g, " ").trim();
             const category = entry.querySelector("category");
             return {
@@ -161,7 +159,7 @@
                 summary,
             };
         });
-        // only ever link to the blog itself
+
         return posts
             .filter((p) => p.url.startsWith(BLOG) && /^\d{4}-\d{2}-\d{2}$/.test(p.date))
             .sort((a, b) => b.date.localeCompare(a.date));
@@ -179,7 +177,7 @@
                 render(posts);
             }
         } catch {
-            // offline blocked or the blog is down
+            // feed unreachable
         } finally {
             clearTimeout(timeout);
         }
@@ -190,7 +188,6 @@
     render(FALLBACK);
     loadFeed();
 
-    // to stop a marquee
     const marquee = document.getElementById("blog-marquee");
     if (marquee && typeof marquee.stop === "function") {
         marquee.addEventListener("mouseenter", () => marquee.stop());

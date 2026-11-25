@@ -1,3 +1,4 @@
+// Startup screen
 (() => {
     "use strict";
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -7,7 +8,7 @@
         seen = localStorage.getItem("bob.booted") === "1";
         localStorage.setItem("bob.booted", "1");
     } catch {
-        // new visitor
+        // no storage
     }
 
     const boot = document.createElement("div");
