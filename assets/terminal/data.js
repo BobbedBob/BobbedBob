@@ -12,7 +12,7 @@
             years: "2024 to now",
             blurb: "the all-in-one education suite for independent educators. classes, files, schedules, " +
                 "assessments, quizzes, billing and recruiting in one clean workspace.",
-            stack: "django, htmx, bootstrap, postgresql, google cloud",
+            stack: "django, htmx, typescript and vite, bootstrap, sqlite, oracle cloud (formerly gcp and azure)",
         },
         {
             id: "barn",
@@ -68,7 +68,7 @@
         });
     }
 
-    const DIRS = {
+    const LINKS = {
         projects: PROJECTS,
         friends: scrape("#friends"),
         socials: scrape("#links"),
@@ -97,8 +97,8 @@
     };
 
     function allEntries() {
-        return [...DIRS.projects, ...DIRS.friends, ...DIRS.socials, {name: "blog", href: BLOG}];
+        return [...LINKS.projects, ...LINKS.friends, ...LINKS.socials, {name: "blog", href: BLOG}];
     }
 
-    bob.termData = {PROJECTS, DIRS, FILES, BLOG, allEntries};
+    bob.termData = {PROJECTS, LINKS, FILES, BLOG, allEntries};
 })();

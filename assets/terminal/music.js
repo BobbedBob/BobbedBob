@@ -76,9 +76,9 @@
     }
 
     command("music", {
-            group: "the basics",
-            help: "play, pause or change the music",
-            complete: () => ["play", "pause", "next", "list", "vol"],
-            run: music,
-        });
+        group: "the basics",
+        help: "play, pause or change the music",
+        complete: () => ["play", "pause", "next", "list", "vol"],
+        run: music,
+    });
 })();

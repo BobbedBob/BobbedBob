@@ -7,29 +7,29 @@
 
     command("rm", {hidden: true, run: () => print("rm: permission denied. nice try though.", "err")});
     command("sudo", {
-            hidden: true,
-            run(args, rest) {
-                if (/^rm\s+(-rf|-fr|-r\s+-f|-f\s+-r)\s+(\/\*?|~|\*)(\s+--no-preserve-root)?$/.test(rest) ||
-                    rest === "rm -rf --no-preserve-root /") {
-                    return nuke();
-                }
-                if (!rest) return print("usage: sudo <command>");
-                print(`[sudo] password for ${user()}: `);
-                print(`${user()} is not in the sudoers file. this incident will be reported.`, "err");
-            },
-        });
+        hidden: true,
+        run(args, rest) {
+            if (/^rm\s+(-rf|-fr|-r\s+-f|-f\s+-r)\s+(\/\*?|~|\*)(\s+--no-preserve-root)?$/.test(rest) ||
+                rest === "rm -rf --no-preserve-root /") {
+                return nuke();
+            }
+            if (!rest) return print("usage: sudo <command>");
+            print(`[sudo] password for ${user()}: `);
+            print(`${user()} is not in the sudoers file. this incident will be reported.`, "err");
+        },
+    });
     command("vim", {hidden: true, run: () => vim()});
     command("vi", {hidden: true, run: () => vim()});
     command("nano", {hidden: true, run: () => print("nano? in this economy? try vim.")});
     command("chaos", {
-            hidden: true,
-            run() {
-                if (bob.chaos) {
-                    bob.chaos();
-                    print(document.body.classList.contains("chaos") ? "chaos mode: on. close the terminal to enjoy it." : "chaos mode: off. phew.");
-                }
-            },
-        });
+        hidden: true,
+        run() {
+            if (bob.chaos) {
+                bob.chaos();
+                print(document.body.classList.contains("chaos") ? "chaos mode: on. close the terminal to enjoy it." : "chaos mode: off. phew.");
+            }
+        },
+    });
 
     function vim() {
         print("you're in vim now. good luck.");

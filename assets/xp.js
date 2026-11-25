@@ -102,6 +102,7 @@
             : `+${recent.amount}xp for exploring`;
         recent.el = toast(text);
     }
+
     bob.toast = toast;
 
     function status() {

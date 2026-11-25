@@ -50,8 +50,14 @@
 
             ball.x += ball.vx;
             ball.y += ball.vy;
-            if (ball.y < 0) { ball.y = -ball.y; ball.vy = -ball.vy; }
-            if (ball.y > H - 1) { ball.y = 2 * (H - 1) - ball.y; ball.vy = -ball.vy; }
+            if (ball.y < 0) {
+                ball.y = -ball.y;
+                ball.vy = -ball.vy;
+            }
+            if (ball.y > H - 1) {
+                ball.y = 2 * (H - 1) - ball.y;
+                ball.vy = -ball.vy;
+            }
 
             const hits = (top) => ball.y >= top - 0.6 && ball.y <= top + PADDLE - 0.4;
             if (ball.vx < 0 && ball.x <= 1.5 && ball.x > 0.3 && hits(py)) {
@@ -153,8 +159,8 @@
     }
 
     command("rally", {
-            group: "games",
-            help: "paddle and ball against the computer, first to 5",
-            run: rally,
-        });
+        group: "games",
+        help: "paddle and ball against the computer, first to 5",
+        run: rally,
+    });
 })();

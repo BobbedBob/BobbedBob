@@ -31,14 +31,17 @@
         <p>bash: cd: <span id="missing-path-2">/that-page</span>: No such file or directory</p>
         <p><span class="p">guest@bobbedbob.io:~$</span> echo "where to now?"</p>
         <p>where to now?</p>
-        <p><span class="p">guest@bobbedbob.io:~$</span> <a href="/">cd ~</a>   <span class="p"># take me home</span></p>
+        <p><span class="p">guest@bobbedbob.io:~$</span> <a href="/">cd ~</a> <span class="p"># take me home</span></p>
         <p><span class="p">guest@bobbedbob.io:~$</span> <span class="blink">_</span></p>
     </div>
 </div>
 <script>
 
     let path = window.location.pathname;
-    try { path = decodeURI(path); } catch { /* malformed address */ }
+    try {
+        path = decodeURI(path);
+    } catch { /* malformed address */
+    }
     document.getElementById("missing-path").textContent = path;
     document.getElementById("missing-path-2").textContent = path;
 
@@ -48,7 +51,8 @@
         if (slug) document.querySelectorAll(".term-404 .p").forEach((p) => {
             p.textContent = p.textContent.replace(/^guest@/, slug + "@");
         });
-    } catch { /* no storage */ }
+    } catch { /* no storage */
+    }
 </script>
 </body>
 </html>

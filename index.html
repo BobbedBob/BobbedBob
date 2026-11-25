@@ -67,6 +67,7 @@
                     "SQLite",
                     "Linux",
                     "Google Cloud",
+                    "Oracle Cloud Infrastructure",
                     "Roblox"
                 ],
                 "knowsLanguage": [
@@ -124,7 +125,8 @@
         brave new world!” It was a challenge, a command.
     </marquee>
     <marquee id="blog-marquee" direction="left" scrollamount="6" aria-label="latest blog posts">
-        <a href="https://blog.bobbedbob.io/" target="_blank">fresh off the blog: read my latest posts at blog.bobbedbob.io</a>
+        <a href="https://blog.bobbedbob.io/" target="_blank">fresh off the blog: read my latest posts at
+            blog.bobbedbob.io</a>
     </marquee>
     <div class="layout">
         <aside class="side">
@@ -220,97 +222,134 @@
                     </a>
                 </div>
                 <section id="skills">
-                    <h2 class="cmd-head"><span class="cmd-prompt">guest@bobbedbob.io:~$</span> ls skills/ <span class="cmd-comment"># stuff i use</span></h2>
+                    <h2 class="cmd-head"><span class="cmd-prompt">guest@bobbedbob.io:~$</span> ls skills/ <span
+                            class="cmd-comment"># stuff i use</span></h2>
                     <div class="skill-row">
                         <span class="skill-label">languages</span>
                         <div class="skill-icons">
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python logo"/>
-                            <span class="tooltiptext">python</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript logo"/>
-                            <span class="tooltiptext">javascript</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="typescript logo"/>
-                            <span class="tooltiptext">typescript</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="assets/skills/lua.png" alt="lua logo"/>
-                            <span class="tooltiptext">lua</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="cpp logo"/>
-                            <span class="tooltiptext">cpp</span>
-                        </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                                     alt="python logo"/>
+                                <span class="tooltiptext">python</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                                     alt="javascript logo"/>
+                                <span class="tooltiptext">javascript</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                                     alt="typescript logo"/>
+                                <span class="tooltiptext">typescript</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill" src="assets/skills/lua.png" alt="lua logo"/>
+                                <span class="tooltiptext">lua</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                                     alt="cpp logo"/>
+                                <span class="tooltiptext">cpp</span>
+                            </div>
                         </div>
                     </div>
                     <div class="skill-row">
                         <span class="skill-label">web</span>
                         <div class="skill-icons">
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="assets/skills/django.png" alt="django logo"/>
-                            <span class="tooltiptext">django</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="assets/skills/htmx.svg" alt="htmx logo"/>
-                            <span class="tooltiptext">htmx</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="bootstrap logo"/>
-                            <span class="tooltiptext">bootstrap</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="vitejs logo"/>
-                            <span class="tooltiptext">vitejs</span>
-                        </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill" src="assets/skills/django.png"
+                                     alt="django logo"/>
+                                <span class="tooltiptext">django</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill" src="assets/skills/htmx.svg" alt="htmx logo"/>
+                                <span class="tooltiptext">htmx</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                                     alt="bootstrap logo"/>
+                                <span class="tooltiptext">bootstrap</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+                                     alt="vitejs logo"/>
+                                <span class="tooltiptext">vitejs</span>
+                            </div>
                         </div>
                     </div>
                     <div class="skill-row">
                         <span class="skill-label">data</span>
                         <div class="skill-icons">
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="postgresql logo"/>
-                            <span class="tooltiptext">postgresql</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="sqlite logo"/>
-                            <span class="tooltiptext">sqlite</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="mongodb logo"/>
-                            <span class="tooltiptext">mongodb</span>
-                        </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                                     alt="postgresql logo"/>
+                                <span class="tooltiptext">postgresql</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg"
+                                     alt="sqlite logo"/>
+                                <span class="tooltiptext">sqlite</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                                     alt="mongodb logo"/>
+                                <span class="tooltiptext">mongodb</span>
+                            </div>
                         </div>
                     </div>
                     <div class="skill-row">
                         <span class="skill-label">tools</span>
                         <div class="skill-icons">
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="linux logo"/>
-                            <span class="tooltiptext">linux</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="google cloud logo"/>
-                            <span class="tooltiptext">google cloud</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" alt="cloudflare logo"/>
-                            <span class="tooltiptext">cloudflare</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="assets/socials/github.svg" alt="github logo"/>
-                            <span class="tooltiptext">github</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" alt="jetbrains pycharm logo"/>
-                            <span class="tooltiptext">jetbrains pycharm</span>
-                        </div>
-                        <div class="tooltip">
-                            <img height="30" width="30" class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="visual studio code logo"/>
-                            <span class="tooltiptext">visual studio code</span>
-                        </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                                     alt="linux logo"/>
+                                <span class="tooltiptext">linux</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
+                                     alt="google cloud logo"/>
+                                <span class="tooltiptext">google cloud</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"
+                                     alt="oracle cloud logo"/>
+                                <span class="tooltiptext">oracle cloud</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg"
+                                     alt="cloudflare logo"/>
+                                <span class="tooltiptext">cloudflare</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill" src="assets/socials/github.svg"
+                                     alt="github logo"/>
+                                <span class="tooltiptext">github</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg"
+                                     alt="jetbrains pycharm logo"/>
+                                <span class="tooltiptext">jetbrains pycharm</span>
+                            </div>
+                            <div class="tooltip">
+                                <img height="30" width="30" class="skill"
+                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+                                     alt="visual studio code logo"/>
+                                <span class="tooltiptext">visual studio code</span>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -320,105 +359,115 @@
 
         <main class="main">
             <section id="projects">
-                <h2 class="cmd-head"><span class="cmd-prompt">guest@bobbedbob.io:~$</span> ls projects/ <span class="cmd-comment"># my projects!!</span></h2>
+                <h2 class="cmd-head"><span class="cmd-prompt">guest@bobbedbob.io:~$</span> ls projects/ <span
+                        class="cmd-comment"># my projects!!</span></h2>
                 <div class="cards">
-                <a class="alink card" href="https://classani.org/" target="_blank">
-                    <img class="card-icon" src="assets/projects/classani-icon.svg" width="44" height="44" alt=""/>
-                    <span class="card-text">
+                    <a class="alink card" href="https://classani.org/" target="_blank">
+                        <img class="card-icon" src="assets/projects/classani-icon.svg" width="44" height="44" alt=""/>
+                        <span class="card-text">
                         <span class="card-name">classani</span>
                         <span class="card-blurb">the all-in-one education suite for independent educators</span>
                         <span class="card-years">2024 to now</span>
                     </span>
-                </a>
-                <a class="alink card" href="https://barn.bobbedbob.io/" target="_blank">
-                    <img class="card-icon" src="assets/projects/bbb.png" width="44" height="44" alt=""/>
-                    <span class="card-text">
+                    </a>
+                    <a class="alink card" href="https://barn.bobbedbob.io/" target="_blank">
+                        <img class="card-icon" src="assets/projects/bbb.png" width="44" height="44" alt=""/>
+                        <span class="card-text">
                         <span class="card-name">bob's bytes barn</span>
                         <span class="card-blurb">my web dev business in melbourne. websites, web apps and rescuing abandoned projects</span>
                         <span class="card-years">2025 to now</span>
                     </span>
-                </a>
-                <a class="alink card" href="https://atar.bobbedbob.io/" target="_blank">
-                    <img class="card-icon" src="assets/projects/allroadsleadtorome.jpg" width="44" height="44" alt=""/>
-                    <span class="card-text">
+                    </a>
+                    <a class="alink card" href="https://atar.bobbedbob.io/" target="_blank">
+                        <img class="card-icon" src="assets/projects/allroadsleadtorome.jpg" width="44" height="44"
+                             alt=""/>
+                        <span class="card-text">
                         <span class="card-name">atar countdown</span>
                         <span class="card-blurb">a countdown to every vce 2026 exam</span>
                         <span class="card-years">2026</span>
                     </span>
-                </a>
-                <button id="more-projects" class="card card-more" type="button" aria-expanded="false" aria-controls="small-donkeyvote small-timer">
-                    <span class="card-icon card-icon-text" aria-hidden="true">+2</span>
-                    <span class="card-text">
+                    </a>
+                    <button id="more-projects" class="card card-more" type="button" aria-expanded="false"
+                            aria-controls="small-donkeyvote small-timer">
+                        <span class="card-icon card-icon-text" aria-hidden="true">+2</span>
+                        <span class="card-text">
                         <span class="card-name">smaller projects</span>
                         <span class="card-blurb">click to show them</span>
                     </span>
-                </button>
-                <a id="small-donkeyvote" class="alink card card-small" href="https://donkey.bobbedbob.io/" target="_blank" hidden>
-                    <img class="card-icon" src="assets/projects/donkeyvote.svg" width="44" height="44" alt=""/>
-                    <span class="card-text">
+                    </button>
+                    <a id="small-donkeyvote" class="alink card card-small" href="https://donkey.bobbedbob.io/"
+                       target="_blank" hidden>
+                        <img class="card-icon" src="assets/projects/donkeyvote.svg" width="44" height="44" alt=""/>
+                        <span class="card-text">
                         <span class="card-name">donkeyvote</span>
                         <span class="card-blurb">voting for dummies. a how-to-vote helper for the vic state election</span>
                         <span class="card-years">2026</span>
                     </span>
-                </a>
-                <a id="small-timer" class="alink card card-small" href="https://timer.bobbedbob.io/" target="_blank" hidden>
-                    <img class="card-icon" src="assets/projects/timer.svg" width="44" height="44" alt=""/>
-                    <span class="card-text">
+                    </a>
+                    <a id="small-timer" class="alink card card-small" href="https://timer.bobbedbob.io/" target="_blank"
+                       hidden>
+                        <img class="card-icon" src="assets/projects/timer.svg" width="44" height="44" alt=""/>
+                        <span class="card-text">
                         <span class="card-name">timer</span>
                         <span class="card-blurb">a countdown, alarm and stopwatch that runs in your browser</span>
                         <span class="card-years">2026</span>
                     </span>
-                </a>
+                    </a>
                 </div>
             </section>
 
             <section id="friends">
-                <h2 class="cmd-head"><span class="cmd-prompt">guest@bobbedbob.io:~$</span> ls friends/ <span class="cmd-comment"># my friends!!</span></h2>
+                <h2 class="cmd-head"><span class="cmd-prompt">guest@bobbedbob.io:~$</span> ls friends/ <span
+                        class="cmd-comment"># my friends!!</span></h2>
                 <div class="friend-list">
-                <a class="alink friend" href="https://samlmon.github.io/" target="_blank">
-                    <img loading="lazy" src="assets/profiles/sam.png" width="44" height="44" alt="sam"/>
-                    <span>sam</span>
-                </a>
-                <a class="alink friend" href="https://sexnine.xyz/" target="_blank">
-                    <img loading="lazy" src="https://sexnine.xyz/_app/immutable/assets/pfp.00c4202c.webp" width="44" height="44" alt="socksnine"/>
-                    <span>socksnine</span>
-                </a>
-                <a class="alink friend" href="https://mct32.xyz/" target="_blank">
-                    <img loading="lazy" src="assets/profiles/mct32.png" width="44" height="44" alt="mct32"/>
-                    <span>MCT32</span>
-                </a>
-                <a class="alink friend" href="https://penguindevs.me/" target="_blank">
-                    <img loading="lazy" src="assets/profiles/penguindevs.gif" width="44" height="44" alt="penguindevs"/>
-                    <span>penguindevs</span>
-                </a>
-                <a class="alink friend" href="https://halocelsius.com/" target="_blank">
-                    <img loading="lazy" src="assets/profiles/halocelsius.png" width="44" height="44" alt="halocelsius"/>
-                    <span>halocelsius</span>
-                </a>
-                <a class="alink friend" href="https://tyzren.com/" target="_blank">
-                    <img loading="lazy" src="assets/profiles/tans.png" width="44" height="44" alt="tans"/>
-                    <span>tans</span>
-                </a>
-<!--                <a class="alink" href="https://faye.dev/" target="_blank">-->
-<!--                    <div class="tooltip">-->
-<!--                        <img-->
-<!--                                style="border-radius: 10px; border: azure"-->
-<!--                                loading="lazy"-->
-<!--                                src="assets/profiles/faye.png"-->
-<!--                                width="35"-->
-<!--                                height="35"-->
-<!--                                alt="faye"-->
-<!--                        />-->
-<!--                        <span class="tooltiptext">-->
-<!--                        faye-->
-<!--                    </span>-->
-<!--                    </div>-->
-<!--                </a>-->
+                    <a class="alink friend" href="https://samlmon.github.io/" target="_blank">
+                        <img loading="lazy" src="assets/profiles/sam.png" width="44" height="44" alt="sam"/>
+                        <span>sam</span>
+                    </a>
+                    <a class="alink friend" href="https://sexnine.xyz/" target="_blank">
+                        <img loading="lazy" src="https://sexnine.xyz/_app/immutable/assets/pfp.00c4202c.webp" width="44"
+                             height="44" alt="socksnine"/>
+                        <span>socksnine</span>
+                    </a>
+                    <a class="alink friend" href="https://mct32.xyz/" target="_blank">
+                        <img loading="lazy" src="assets/profiles/mct32.png" width="44" height="44" alt="mct32"/>
+                        <span>MCT32</span>
+                    </a>
+                    <a class="alink friend" href="https://penguindevs.me/" target="_blank">
+                        <img loading="lazy" src="assets/profiles/penguindevs.gif" width="44" height="44"
+                             alt="penguindevs"/>
+                        <span>penguindevs</span>
+                    </a>
+                    <a class="alink friend" href="https://halocelsius.com/" target="_blank">
+                        <img loading="lazy" src="assets/profiles/halocelsius.png" width="44" height="44"
+                             alt="halocelsius"/>
+                        <span>halocelsius</span>
+                    </a>
+                    <a class="alink friend" href="https://tyzren.com/" target="_blank">
+                        <img loading="lazy" src="assets/profiles/tans.png" width="44" height="44" alt="tans"/>
+                        <span>tans</span>
+                    </a>
+                    <!--                <a class="alink" href="https://faye.dev/" target="_blank">-->
+                    <!--                    <div class="tooltip">-->
+                    <!--                        <img-->
+                    <!--                                style="border-radius: 10px; border: azure"-->
+                    <!--                                loading="lazy"-->
+                    <!--                                src="assets/profiles/faye.png"-->
+                    <!--                                width="35"-->
+                    <!--                                height="35"-->
+                    <!--                                alt="faye"-->
+                    <!--                        />-->
+                    <!--                        <span class="tooltiptext">-->
+                    <!--                        faye-->
+                    <!--                    </span>-->
+                    <!--                    </div>-->
+                    <!--                </a>-->
                 </div>
             </section>
 
             <section id="blog">
-                <h2 class="cmd-head"><span class="cmd-prompt">guest@bobbedbob.io:~$</span> ls blog/ --latest <span class="cmd-comment"># words, sometimes</span></h2>
+                <h2 class="cmd-head"><span class="cmd-prompt">guest@bobbedbob.io:~$</span> ls blog/ --latest <span
+                        class="cmd-comment"># words, sometimes</span></h2>
                 <div id="blog-posts" class="cards blog-cards"></div>
                 <a class="alink blog-all" href="https://blog.bobbedbob.io/" target="_blank">
                     <span class="rainbow-text-animated">see all posts on my blog -&gt;</span>
@@ -445,7 +494,8 @@
                 </a>
                 <a class="alink" target="_blank" href="https://pridefoundation.org.au/">
                     <div class="tooltip">
-                        <img src="assets/socials/pfa.png" alt="Pride Foundation Australia logo" loading="lazy" width="114" height="36"/>
+                        <img src="assets/socials/pfa.png" alt="Pride Foundation Australia logo" loading="lazy"
+                             width="114" height="36"/>
                         <span class="tooltiptext">pride foundation australia, helping to push the rights of LGBTQIA+ peoples</span>
                     </div>
                 </a>
@@ -466,17 +516,17 @@
     </footer>
     <script src="assets/main.js?v=2" type="text/javascript"></script>
     <script src="assets/xp.js?v=4" type="text/javascript"></script>
-    <script src="assets/terminal/core.js?v=2" type="text/javascript"></script>
-    <script src="assets/terminal/data.js?v=2" type="text/javascript"></script>
-    <script src="assets/terminal/commands.js?v=2" type="text/javascript"></script>
-    <script src="assets/terminal/music.js?v=2" type="text/javascript"></script>
-    <script src="assets/terminal/fastfetch.js?v=2" type="text/javascript"></script>
-    <script src="assets/terminal/fun.js?v=2" type="text/javascript"></script>
-    <script src="assets/terminal/games/arcade.js?v=2" type="text/javascript"></script>
-    <script src="assets/terminal/games/maths.js?v=2" type="text/javascript"></script>
-    <script src="assets/terminal/games/snake.js?v=2" type="text/javascript"></script>
-    <script src="assets/terminal/games/stack.js?v=2" type="text/javascript"></script>
-    <script src="assets/terminal/games/rally.js?v=2" type="text/javascript"></script>
+    <script src="assets/terminal/core.js?v=3" type="text/javascript"></script>
+    <script src="assets/terminal/data.js?v=4" type="text/javascript"></script>
+    <script src="assets/terminal/commands.js?v=3" type="text/javascript"></script>
+    <script src="assets/terminal/music.js?v=3" type="text/javascript"></script>
+    <script src="assets/terminal/fastfetch.js?v=3" type="text/javascript"></script>
+    <script src="assets/terminal/fun.js?v=3" type="text/javascript"></script>
+    <script src="assets/terminal/games/arcade.js?v=3" type="text/javascript"></script>
+    <script src="assets/terminal/games/maths.js?v=3" type="text/javascript"></script>
+    <script src="assets/terminal/games/snake.js?v=3" type="text/javascript"></script>
+    <script src="assets/terminal/games/stack.js?v=3" type="text/javascript"></script>
+    <script src="assets/terminal/games/rally.js?v=3" type="text/javascript"></script>
     <script src="assets/fx.js?v=6" type="text/javascript"></script>
     <script src="assets/blog.js?v=3" type="text/javascript"></script>
 </div>

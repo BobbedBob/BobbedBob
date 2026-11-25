@@ -2,7 +2,10 @@
 (() => {
     "use strict";
     const bob = (window.bob = window.bob || {});
-    const store = bob.store || {get: (k, d = null) => d, set: () => {} /* no storage */};
+    const store = bob.store || {
+        get: (k, d = null) => d, set: () => {
+        } /* no storage */
+    };
 
     function visitorName() {
         return (store.get("bob.name", "") || "").trim();
@@ -31,7 +34,11 @@
     const term = el("div", {id: "term", class: "term", role: "dialog", "aria-label": "terminal"});
     const bar = el("div", {class: "term-bar", title: "drag to resize, double-click for full screen"});
     const titleEl = el("span", {class: "term-title"}, `bobsh: ${user()}@bobbedbob.io`);
-    const fullBtn = el("button", {class: "term-btn", type: "button", "aria-label": "toggle full screen"}, "[ ] full screen");
+    const fullBtn = el("button", {
+        class: "term-btn",
+        type: "button",
+        "aria-label": "toggle full screen"
+    }, "[ ] full screen");
     const closeBtn = el("button", {class: "term-btn", type: "button", "aria-label": "close terminal"}, "[x] close");
     const barButtons = el("span", {class: "term-btns"});
     barButtons.append(fullBtn, closeBtn);
@@ -66,7 +73,12 @@
         el("span", {class: "term-strip-open", "aria-hidden": "true"}, "[^]"),
     );
 
-    const fab = el("button", {type: "button", class: "term-fab", title: "open the terminal", "aria-label": "open the terminal"}, ">_");
+    const fab = el("button", {
+        type: "button",
+        class: "term-fab",
+        title: "open the terminal",
+        "aria-label": "open the terminal"
+    }, ">_");
     if (store.get("bob.term.used") !== "1") fab.classList.add("pulse");
     document.body.append(strip, fab);
     document.body.classList.add("has-strip");
@@ -241,7 +253,7 @@
         historyIndex = history.length;
 
         const [rawName, ...args] = trimmed.split(/\s+/);
-        const name = rawName.toLowerCase();
+        const name = rawName.toLowerCase().replace(/^\.\//, "");
         const cmd = commands[name];
         if (!cmd) {
             print(`bobsh: ${rawName}: command not found`, "err");

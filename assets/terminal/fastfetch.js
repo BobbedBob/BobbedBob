@@ -78,9 +78,9 @@
     }
 
     command("fastfetch", {
-            group: "for the nerds",
-            help: "the specs of my actual computer",
-            run: fastfetch,
-        });
+        group: "for the nerds",
+        help: "the specs of my actual computer",
+        run: fastfetch,
+    });
     command("neofetch", {hidden: true, run: fastfetch});
 })();

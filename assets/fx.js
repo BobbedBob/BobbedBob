@@ -44,6 +44,7 @@
             if (bob.xp) bob.xp.once("chaos", 100, "for finding chaos mode");
         }
     }
+
     bob.chaos = toggleChaos;
 
     document.addEventListener("keydown", (e) => {

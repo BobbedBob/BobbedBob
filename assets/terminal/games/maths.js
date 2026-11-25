@@ -19,39 +19,96 @@
         const tiers = [
 
             [
-                () => { const a = r(10, 99), b = r(10, 99); return q(`${a} + ${b}`, a + b); },
-                () => { const a = r(20, 99), b = r(10, a); return q(`${a} - ${b}`, a - b); },
-                () => { const a = r(2, 12), b = r(2, 12); return q(`${a} × ${b}`, a * b); },
+                () => {
+                    const a = r(10, 99), b = r(10, 99);
+                    return q(`${a} + ${b}`, a + b);
+                },
+                () => {
+                    const a = r(20, 99), b = r(10, a);
+                    return q(`${a} - ${b}`, a - b);
+                },
+                () => {
+                    const a = r(2, 12), b = r(2, 12);
+                    return q(`${a} × ${b}`, a * b);
+                },
             ],
 
             [
-                () => { const a = r(100, 999), b = r(100, 999); return q(`${a} + ${b}`, a + b); },
-                () => { const a = r(300, 999), b = r(100, a); return q(`${a} - ${b}`, a - b); },
-                () => { const a = r(13, 99), b = r(3, 9); return q(`${a} × ${b}`, a * b); },
-                () => { const b = r(3, 12), ans = r(11, 25); return q(`${b * ans} ÷ ${b}`, ans); },
-                () => { const a = r(11, 20); return q(`${a}²`, a * a); },
+                () => {
+                    const a = r(100, 999), b = r(100, 999);
+                    return q(`${a} + ${b}`, a + b);
+                },
+                () => {
+                    const a = r(300, 999), b = r(100, a);
+                    return q(`${a} - ${b}`, a - b);
+                },
+                () => {
+                    const a = r(13, 99), b = r(3, 9);
+                    return q(`${a} × ${b}`, a * b);
+                },
+                () => {
+                    const b = r(3, 12), ans = r(11, 25);
+                    return q(`${b * ans} ÷ ${b}`, ans);
+                },
+                () => {
+                    const a = r(11, 20);
+                    return q(`${a}²`, a * a);
+                },
             ],
 
             [
-                () => { const a = r(12, 45), b = r(11, 29); return q(`${a} × ${b}`, a * b); },
-                () => { const a = r(3, 15), b = r(3, 15), c = r(10, 99); return q(`${a} × ${b} + ${c}`, a * b + c); },
-                () => { const a = r(10, 60), b = r(3, 12), c = r(3, 12); return q(`${a} - ${b} × ${c}`, a - b * c); },
+                () => {
+                    const a = r(12, 45), b = r(11, 29);
+                    return q(`${a} × ${b}`, a * b);
+                },
+                () => {
+                    const a = r(3, 15), b = r(3, 15), c = r(10, 99);
+                    return q(`${a} × ${b} + ${c}`, a * b + c);
+                },
+                () => {
+                    const a = r(10, 60), b = r(3, 12), c = r(3, 12);
+                    return q(`${a} - ${b} × ${c}`, a - b * c);
+                },
                 () => {
                     const p = pick([5, 10, 15, 20, 25, 30, 40, 60, 75]);
                     const n = (100 / gcd(p, 100)) * r(1, 12);
                     return q(`${p}% of ${n}`, (p * n) / 100);
                 },
-                () => { const a = r(15, 30); return q(`${a}²`, a * a); },
-                () => { const a = r(3, 15), b = r(3, 15); return q(`-${a} × ${b}`, -a * b); },
+                () => {
+                    const a = r(15, 30);
+                    return q(`${a}²`, a * a);
+                },
+                () => {
+                    const a = r(3, 15), b = r(3, 15);
+                    return q(`-${a} × ${b}`, -a * b);
+                },
             ],
 
             [
-                () => { const a = r(120, 999), b = r(3, 9); return q(`${a} × ${b}`, a * b); },
-                () => { const a = r(31, 99), b = r(31, 99); return q(`${a} × ${b}`, a * b); },
-                () => { const a = r(5, 40), b = r(5, 40), c = r(3, 12); return q(`(${a} + ${b}) × ${c}`, (a + b) * c); },
-                () => { const a = r(2, 12); return q(`${a}³`, a * a * a); },
-                () => { const a = r(12, 30); return q(`√${a * a}`, a); },
-                () => { const a = r(11, 30), b = r(2, a - 1); return q(`${a}² - ${b}²`, a * a - b * b); },
+                () => {
+                    const a = r(120, 999), b = r(3, 9);
+                    return q(`${a} × ${b}`, a * b);
+                },
+                () => {
+                    const a = r(31, 99), b = r(31, 99);
+                    return q(`${a} × ${b}`, a * b);
+                },
+                () => {
+                    const a = r(5, 40), b = r(5, 40), c = r(3, 12);
+                    return q(`(${a} + ${b}) × ${c}`, (a + b) * c);
+                },
+                () => {
+                    const a = r(2, 12);
+                    return q(`${a}³`, a * a * a);
+                },
+                () => {
+                    const a = r(12, 30);
+                    return q(`√${a * a}`, a);
+                },
+                () => {
+                    const a = r(11, 30), b = r(2, a - 1);
+                    return q(`${a}² - ${b}²`, a * a - b * b);
+                },
             ],
         ];
         return pick(tiers[tier])();
@@ -112,9 +169,9 @@
     }
 
     command("maths", {
-            group: "games",
-            help: "mental maths challenge (try: maths hard)",
-            complete: () => ["easy", "normal", "hard"],
-            run: maths,
-        });
+        group: "games",
+        help: "mental maths challenge (try: maths hard)",
+        complete: () => ["easy", "normal", "hard"],
+        run: maths,
+    });
 })();

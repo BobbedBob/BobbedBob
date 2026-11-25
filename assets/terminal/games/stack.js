@@ -166,8 +166,14 @@
             touchMove(t, start) {
                 const step = charWidth() * 2;
                 const columns = Math.trunc((t.clientX - start.x) / step);
-                while (moved < columns) { move(1); moved++; }
-                while (moved > columns) { move(-1); moved--; }
+                while (moved < columns) {
+                    move(1);
+                    moved++;
+                }
+                while (moved > columns) {
+                    move(-1);
+                    moved--;
+                }
             },
             touchEnd(dx, dy, dt) {
                 if (dy > 60 && Math.abs(dy) > Math.abs(dx)) slam();
@@ -189,8 +195,8 @@
     }
 
     command("stack", {
-            group: "games",
-            help: "falling blocks: clear lines, don't hit the top",
-            run: stack,
-        });
+        group: "games",
+        help: "falling blocks: clear lines, don't hit the top",
+        run: stack,
+    });
 })();
