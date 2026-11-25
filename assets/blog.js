@@ -98,7 +98,7 @@
             a.append(post.title);
             items.push(a);
         });
-        marquee.replaceChildren(el("span", "blog-marquee-label", "fresh off the blog: "), ...items);
+        marquee.replaceChildren(el("span", "blog-marquee-label", "from my blog: "), ...items);
     }
 
     function renderNewNote(posts) {
