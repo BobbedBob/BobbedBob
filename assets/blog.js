@@ -119,7 +119,7 @@
     function renderCards(posts) {
         const box = document.getElementById("blog-posts");
         if (!box) return;
-        const cards = posts.slice(0, 3).map((post) => {
+        const cards = posts.slice(0, 4).map((post) => {
             const card = postLink(post, "alink card blog-card");
             const text = el("span", "card-text");
             const name = el("span", "card-name", post.title);
